@@ -85,6 +85,23 @@ body {
   .reset-button:hover {
     background-color: #dddddd;
   }
+
+  .rules-button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .rules-button:hover {
+    background-color: #dddddd;
+  }
   
   @keyframes fade-in {
     0% {

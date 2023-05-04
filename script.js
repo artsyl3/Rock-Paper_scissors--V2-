@@ -1,6 +1,7 @@
 const playerScoreElement = document.getElementById("player-score");
 const computerScoreElement = document.getElementById("computer-score");
 const resultElement = document.getElementById("result");
+const rulesButton = document.getElementById("rules-button");
 
 
 const choices = ["rock", "paper", "scissors", "fire", "water"];
@@ -75,7 +76,22 @@ function resetGame() {
 }
 
 
+function showRules() {
+  const rulesMessage = "Here are the rules:\n\n" +
+    "Rock beats Scissors, Fire.\n" +
+    "Paper beats Rock and Water.\n" +
+    "Scissors beat Paper and Fire.\n" +
+    "Fire beats Paper and Water.\n" +
+    "Water beats Rock and Scissors.";
+
+  alert(rulesMessage);
+}
+
+
 window.addEventListener("load", () => {
   playerScoreElement.textContent = playerScore;
   computerScoreElement.textContent = computerScore;
 });
+
+
+rulesButton.addEventListener("click", showRules);
