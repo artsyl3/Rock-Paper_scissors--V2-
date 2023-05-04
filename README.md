@@ -1,4 +1,4 @@
- # Rock-Paper_scissors
+ # Rock,Paper,Scissors, Fire and Water
  
 
 Game application.
