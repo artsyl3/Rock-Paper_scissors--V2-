@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0;
+    animation: fade-in 1s;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    animation: slide-up 1s;
+  }
+  
+  .player-score,
+  .computer-score {
+    width: 200px;
+  }
+  
+  .player-score h2,
+  .computer-score h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  
+  .player-score p,
+  .computer-score p {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slide-up 1s;
+  }
+  
+  .choice {
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+  }
+  
+  .reset-button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .reset-button:hover {
+    background-color: #dddddd;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors, Fire, Water</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
+    <body>
+        <div class="container">
+            <h2>Pick one form Rock, Paper, Scissors, Fire, or Scissors</h2>
+        
+            <div class="scoreboard">
+              <div class="player-score">
+                <h2>Player</h2>
+                <p id="player-score">0</p>
+              </div>
+              <div class="computer-score">
+                <h2>Computer</h2>
+                <p id="computer-score">0</p>
+              </div>
+            </div>
+        
+            <div class="choices">
+              <button class="choice" onclick="playGame('rock')">👊</button>
+              <button class="choice" onclick="playGame('paper')">✋</button>
+              <button class="choice" onclick="playGame('scissors')">✌️</button>
+              <button class="choice" onclick="playGame('fire')">🔥</button>
+              <button class="choice" onclick="playGame('water')">💧</button>
+            </div>
+        
+            <p id="result"></p>
+        
+            <button class="reset-button" onclick="resetGame()">Reset</button>
+        </div>
+        <script src="script.js"></script>
 </body>
 </html>
